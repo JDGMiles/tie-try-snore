@@ -10,18 +10,48 @@
 <body><center>
 
   <table>
+    <tr>
+      <td></td>
+      <td>
+        <div class="word" id="word1" onclick="edit1()">TIE</div>
+      </td>
+      <td></td>
+    </tr>
 
-    <tr><td colspan="6"><center><br>
+    <tr>
+      <td>
+        <button class="operationbutton" id="plus" onclick="operationchange(plus)">+</button><br>
+        <button class="operationbutton" id="minues" onclick="operationchange(minus)">&#8722;</button><br>
+        <button class="operationbutton" id="multiply" onclick="operationchange(multiply)"><span style="font-size:65%">&#10005;</span></button><br>
+        <button class="operationbutton" id="divide" onclick="operationchange(divide)">&#247;</button></td>
+      <td>
+        <textarea class="word" id="word1" type="text" onblur="if(this.value==''){this.value='TRY';}" onfocus="if(this.value=='TRY'){this.value = ''}"/>TRY</textarea>
+      </td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>
+        <button class="operationbutton" onclick="operationchange(equals)">=</button>&nbsp;&nbsp;&nbsp;<br>
+      </td>
+      <td>
+        <textarea class="word" id="word1" type="text" onblur="if(this.value==''){this.value='SNORE';}" onfocus="if(this.value=='SNORE'){this.value = ''}"/>SNORE</textarea>
+      </td>
+      <td></td>
+    </tr>
+
+    <tr><td></td><td><center><br>
       <a href="#popup1"><img src="http://jdgmiles.github.io/questionmark.png" style="width:60px"></a>
       <a href="http://jdgmiles.github.io/" target="_blank"><img src="http://jdgmiles.github.io/jdgm.png" style="width:60px"></a>				<a href="https://twitter.com/jimdgmiles" target=blank_><img title="James Miles on Twitter" src="http://jdgmiles.github.io/twitter.png" style="width:60px; height:60px"></a></center>
     </td></tr>
+
   </table>
 
   <div id="popup1" class="overlay">
     <div class="popup">
-      <div style="font-family:Georgia; color:white; text-align:center; font-size:180%; border:0px;">&ldquo;The Quiz&rdquo;</div>
+      <div style="font-family:Georgia; color:white; text-align:center; font-size:170%; border:0px; text-decoration:underline;"><br>Word Arithmetic Solver</div>
       <a class="close" href="#">&times;</a>
-      <p style="font-family:Georgia; font-size:100%; color:white; text-align:justify;">Click the &ldquo;T&rdquo; or &ldquo;F&rdquo; to mark a question true or false. It will become coloured to show the choice that has been made.<br><br>&ldquo;Submit&rdquo; submits, &ldquo;Clear&rdquo; clears.<br><br>Straightforward!</p>
+      <p style="font-family:Georgia; font-size:120%; color:white; text-align:center;">Type words in the boxes then choose the desired operation.<br><br>Press the &ldquo;=&rdquo; button to solve.</p>
     </div>
   </div>
 

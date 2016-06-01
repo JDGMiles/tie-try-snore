@@ -10,10 +10,10 @@ body {font-family: Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif; font-
 .liberationbolditalic {font-family:Liberation Serif Bold Italic, Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif}
 .liberationitalic {font-family:Liberation Serif Italic, Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif}
 
-.title {font-size:170%;}
-.questions {font-size:95%; line-height:25px; display: block;}
-.answers {font-size:95%; line-height:0px; display: block;}
-.button {font-family: Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif; font-size:73%}
+.typerbutton {font-family: Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif; font-size:30px}
+.operationbutton {width:40px; height:40px; font-family: Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif; background-color: black; color:white; text-align:center; font-size:40px; line-height:20px;}
+.word {font-family: Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif; background-color: black; color:white; width:450px; height:104px; text-align:center; font-size:85px; border:solid 2px; border-color:white;}
+.equalssign {font-family: Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif; background-color: black; color:white; text-align:center; font-size:100px}
 
 .overlay {
   position: fixed;
@@ -56,7 +56,7 @@ body {font-family: Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif; font-
   color: #fff;
 }
 .popup .close:hover {
-  color: #06D85F;
+  color: #FF0000;
 }
 .popup .content {
   max-height: 30%;
