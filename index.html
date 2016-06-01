@@ -8,32 +8,32 @@
   <meta name="viewport" content="width=700, initial-scale=1">
 </head>
 
-<body><center>
+<body onload="operationchange(3)"><center>
 
   <table>
     <tr>
       <td>
-        <button class="operationbutton" id="plus" onclick="operationchange(plus)">+</button><br>
-        <button class="operationbutton" id="minues" onclick="operationchange(minus)">&#8722;</button><br>
-        <button class="operationbutton" id="multiply" onclick="operationchange(multiply)"><span style="font-size:65%">&#10005;</span></button><br>
-        <button class="operationbutton" id="divide" onclick="operationchange(divide)">&#247;</button><br><br><br>
-        <button class="operationbutton" onclick="operationchange(equals)">=</button>&nbsp;&nbsp;&nbsp;<br>
+        <button class="operationbutton" id="1" onclick="operationchange(1)">+</button><br>
+        <button class="operationbutton" id="2" onclick="operationchange(2)">&#8722;</button><br>
+        <button class="operationbutton" id="3" onclick="operationchange(3)"><span style="font-size:65%">&#10005;</span></button><br>
+        <button class="operationbutton" id="4" onclick="operationchange(4)">&#247;</button><br><br><br>
+        <button class="operationbutton" id="5" onclick="go()">=</button>&nbsp;&nbsp;&nbsp;<br>
       </td>
       <td>
-        <div class="word" id="word1" onclick="edit1()">TIE</div>
-        <div class="word" id="word2" onclick="edit2()">TRY</div>
-        <div class="word" id="word3" onclick="edit3()">SNORE</div>
+        <div class="word" id="word1" onclick="edit(1)">TIE</div>
+        <div class="word" id="word2" onclick="edit(2)">TRY</div>
+        <div class="word" id="word3" onclick="edit(3)">SNORE</div>
       </td>
       <td>
-        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="a" onclick="letter(a)">A</button><button class="letterbutton" id="b" onclick="letter(b)">B</button><button class="letterbutton" id="c" onclick="letter(c)">C</button><br>
-        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="d" onclick="letter(d)">D</button><button class="letterbutton" id="e" onclick="letter(e)">E</button><button class="letterbutton" id="f" onclick="letter(f)">F</button><br>
-        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="g" onclick="letter(g)">G</button><button class="letterbutton" id="h" onclick="letter(h)">H</button><button class="letterbutton" id="i" onclick="letter(i)">I</button><br>
-        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="j" onclick="letter(j)">J</button><button class="letterbutton" id="k" onclick="letter(k)">K</button><button class="letterbutton" id="l" onclick="letter(l)">L</button><br>
-        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="m" onclick="letter(m)">M</button><button class="letterbutton" id="n" onclick="letter(n)">N</button><button class="letterbutton" id="o" onclick="letter(o)">O</button><br>
-        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="p" onclick="letter(p)">P</button><button class="letterbutton" id="q" onclick="letter(q)">Q</button><button class="letterbutton" id="r" onclick="letter(r)">R</button><br>
-        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="s" onclick="letter(s)">S</button><button class="letterbutton" id="t" onclick="letter(t)">T</button><button class="letterbutton" id="u" onclick="letter(u)">U</button><br>
-        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="v" onclick="letter(v)">V</button><button class="letterbutton" id="w" onclick="letter(w)">W</button><button class="letterbutton" id="x" onclick="letter(x)">X</button><br>
-        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="y" onclick="letter(y)">Y</button><button class="letterbutton" id="z" onclick="letter(z)">Z</button><button class="letterbutton" id="del" onclick="letter(del)" style="font-size:100%; text-align:left; padding:2px 0px 0px 1px;">&#9003;</button><br>
+        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="A" onclick="letter(1)">A</button><button class="letterbutton" id="B" onclick="letter(2)">B</button><button class="letterbutton" id="C" onclick="letter(3)">C</button><br>
+        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="D" onclick="letter(4)">D</button><button class="letterbutton" id="E" onclick="letter(5)">E</button><button class="letterbutton" id="F" onclick="letter(6)">F</button><br>
+        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="G" onclick="letter(7)">G</button><button class="letterbutton" id="H" onclick="letter(8)">H</button><button class="letterbutton" id="I" onclick="letter(9)">I</button><br>
+        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="J" onclick="letter(10)">J</button><button class="letterbutton" id="K" onclick="letter(11)">K</button><button class="letterbutton" id="L" onclick="letter(12)">L</button><br>
+        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="M" onclick="letter(13)">M</button><button class="letterbutton" id="N" onclick="letter(14)">N</button><button class="letterbutton" id="O" onclick="letter(15)">O</button><br>
+        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="P" onclick="letter(16)">P</button><button class="letterbutton" id="Q" onclick="letter(17)">Q</button><button class="letterbutton" id="R" onclick="letter(18)">R</button><br>
+        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="S" onclick="letter(19)">S</button><button class="letterbutton" id="T" onclick="letter(20)">T</button><button class="letterbutton" id="U" onclick="letter(21)">U</button><br>
+        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="V" onclick="letter(22)">V</button><button class="letterbutton" id="W" onclick="letter(23)">W</button><button class="letterbutton" id="X" onclick="letter(24)">X</button><br>
+        &nbsp;&nbsp;&nbsp;<button class="letterbutton" id="Y" onclick="letter(25)">Y</button><button class="letterbutton" id="Z" onclick="letter(26)">Z</button><button class="letterbutton" id="del" onclick="letter(27)" style="font-size:100%; text-align:left; padding:2px 0px 0px 1px;">&#9003;</button><br>
     </td>
     </tr>
 
@@ -48,7 +48,7 @@
     <div class="popup">
       <div style="font-family:Georgia; color:white; text-align:left; font-size:170%; border:0px; text-decoration:underline;">Word Arithmetic Solver</div>
       <a class="close" href="#">&times;</a>
-      <p style="font-family:Georgia; font-size:120%; color:white; text-align:left;">Change the words by tapping them and using the alphabet on the right.<br><br>Choose your operation from the four on the left, then press the equals sign to compute a solution.<br><br>As an example, try pressing &ldquo;=&rdquo; with the initial words TIE, TRY, SNORE.</p>
+      <p style="font-family:Georgia; font-size:120%; color:white; text-align:left;">Change the words by clicking them and using the alphabet on the right.<br><br>Choose your operation from the four on the left, then press the equals sign to compute a solution.<br><br>As an example, try pressing &ldquo;=&rdquo; with the initial words TIE, TRY, SNORE.</p>
     </div>
   </div>
 
@@ -57,5 +57,193 @@
 </html>
 
 <script type="text/javascript">
+var operation=3;
+var w1=[];
+var w2=[];
+var w3=[];
+for (var i=0; i<7; i++){w1[i]=0; w2[i]=0; w3[i]=0;}
+var lettersused=[];
+for (var i=0; i<27; i++){lettersused[i]=0;}
+var count=0;
+var trialset=[];
+for (var i=0; i<11; i++){trialset[i]=0;}
+var v1=0;
+var v2=0;
+var v3=0;
+var w1min=0;
+var w2min=0;
+var w3min=0;
+var oword1=document.getElementById("word1").innerHTML;
+var oword2=document.getElementById("word2").innerHTML;
+var oword3=document.getElementById("word3").innerHTML;
+var thinking=0;
+var solved=0;
+var editing=0;
+
+function edit(n){if(!thinking){
+  document.getElementById("word1").style.backgroundColor="black";
+  document.getElementById("word2").style.backgroundColor="black";
+  document.getElementById("word3").style.backgroundColor="black";
+  document.getElementById("word"+n).style.backgroundColor="red";
+  document.getElementById("word"+n).innerHTML="";}
+  oword1=document.getElementById("word1").innerHTML;
+  oword2=document.getElementById("word2").innerHTML;
+  oword3=document.getElementById("word3").innerHTML;
+  editing=n;
+}
+
+function letter(n){if(!thinking){
+  if(editing==1){
+    if(n==27 && oword1.length>0){oword1=oword1.substring(0,oword1.length-1); document.getElementById("word1").innerHTML=oword1;}
+    else if(oword1.length<7){oword1=oword1+""+String.fromCharCode(n+64); document.getElementById("word1").innerHTML=oword1;}
+  }
+  else if(editing==2){
+    if(n==27 && oword2.length>0){oword2=oword2.substring(0,oword2.length-1); document.getElementById("word2").innerHTML=oword2;}
+    else if(oword2.length<7){oword2=oword2+""+String.fromCharCode(n+64); document.getElementById("word2").innerHTML=oword2;}
+  }
+  else if(editing==3){
+    if(n==27 && oword3.length>0){oword3=oword3.substring(0,oword3.length-1); document.getElementById("word3").innerHTML=oword3;}
+    else if(oword3.length<7){oword3=oword3+""+String.fromCharCode(n+64); document.getElementById("word3").innerHTML=oword3;}
+  }
+}}
+
+function operationchange(n){
+  document.getElementById(operation).style.backgroundColor="black";
+  document.getElementById(n).style.backgroundColor="red";
+  operation=n;
+}
+
+function go(){
+  if(!thinking){
+    document.getElementById("word1").style.backgroundColor="black";
+    document.getElementById("word2").style.backgroundColor="black";
+    document.getElementById("word3").style.backgroundColor="black";
+    oword1=document.getElementById("word1").innerHTML;
+    oword2=document.getElementById("word2").innerHTML;
+    oword3=document.getElementById("word3").innerHTML;
+
+    for(var i=0; i<oword1.length; i++){
+      w1[6-i]=(oword1[oword1.length-i-1]).charCodeAt(0)-64
+      lettersused[w1[6-i]]=1;
+    }
+    for(var i=0; i<oword2.length; i++){
+      w2[6-i]=(oword2[oword2.length-i-1]).charCodeAt(0)-64;
+      lettersused[w2[6-i]]=1;
+    }
+    for(var i=0; i<oword3.length; i++){
+      w3[6-i]=(oword3[oword3.length-i-1]).charCodeAt(0)-64;
+      lettersused[w3[6-i]]=1;
+    }
+
+    count=0;
+    for(i=0; i<27; i++){if(lettersused[i]==1){count++}}
+    if(count>10){
+      document.getElementById("word1").innerHTML="More than";
+      document.getElementById("word2").innerHTML="ten distinct";
+      document.getElementById("word3").innerHTML="letters. <span style=\"font-family:Georgia\">&#9785;</span>";
+      thinking=1;
+      document.getElementById("5").innerHTML="R";
+    }
+    else if(count==0){
+      document.getElementById("word1").innerHTML="Hey!";
+      document.getElementById("word2").innerHTML="There&rsquo;s no";
+      document.getElementById("word3").innerHTML="input! <span style=\"font-family:Georgia\">&#9785;</span>";
+      thinking=1;
+      document.getElementById("5").innerHTML="R";
+    }
+    else{
+      document.getElementById("word1").innerHTML="Thinking!";
+      document.getElementById("word2").innerHTML="Please";
+      document.getElementById("word3").innerHTML="Wait...";
+      setTimeout(compute, 500);
+    }
+  }
+  else{window.location.reload();}
+}
+
+function compute(){
+  thinking=1;
+  w1min=Math.pow(10, oword1.length-1);
+  w2min=Math.pow(10, oword2.length-1);
+  w3min=Math.pow(10, oword3.length-1);
+
+  count=0;
+  for(i=0; i<27; i++){if(lettersused[i]==1){count++; lettersused[i]=count;}}
+  for (var i=0; i<7; i++){w1[i]=lettersused[w1[i]]; w2[i]=lettersused[w2[i]]; w3[i]=lettersused[w3[i]];}
+
+  for(a=0; a<10; a++){
+    for(b=0; b<10; b++){
+      valid=0;
+      while(!valid){if(b!=a){valid=1;} else{b++;}}
+      for(c=0; c<10; c++){
+        valid=0;
+        while(!valid){if(c!=a && c!=b){valid=1;} else{c++;}}
+        for(d=0; d<10; d++){
+          valid=0;
+          while(!valid){if(d!=a && d!=b && d!=c){valid=1;} else{d++;}}
+          for(e=0; e<10; e++){
+            valid=0;
+            while(!valid){if(e!=a && e!=b && e!=c && e!=d){valid=1;} else{e++;}}
+            for(f=0; f<10; f++){
+              valid=0;
+              while(!valid){if(f!=a && f!=b && f!=c && f!=d && f!=e){valid=1;} else{f++;}}
+              for(g=0; g<10; g++){
+                valid=0;
+                while(!valid){if(g!=a && g!=b && g!=c && g!=d && g!=e && g!=f){valid=1;} else{g++;}}
+                for(h=0; h<10; h++){
+                  valid=0;
+                  while(!valid){if(h!=a && h!=b && h!=c && h!=d && h!=e && h!=f && h!=g){valid=1;} else{h++;}}
+                  for(i=0; i<10; i++){
+                    valid=0;
+                    while(!valid){if(i!=a && i!=b && i!=c && i!=d && i!=e && i!=f && i!=g && i!=h){valid=1;} else{i++;}}
+                    for(j=0; j<10; j++){
+                      valid=0;
+                      while(!valid){if(j!=a && j!=b && j!=c && j!=d && j!=e && j!=f && j!=g && j!=h && j!=i){valid=1;} else{j++;}}
+
+                      trialset[1]=a; trialset[2]=b; trialset[3]=c; trialset[4]=d; trialset[5]=e; trialset[6]=f; trialset[7]=g; trialset[8]=h; trialset[9]=i; trialset[10]=j;
+                      v1=0; v2=0; v3=0;
+                      for(l=0; l<7; l++){v1+=Math.pow(10,l)*trialset[w1[6-l]]; v2+=Math.pow(10,l)*trialset[w2[6-l]]; v3+=Math.pow(10,l)*trialset[w3[6-l]];}
+                      if(v1>=w1min && v2>=w2min && v3>=w3min){
+                        if(operation==1 && v3==v1+v2){j=10; i=10; h=10; g=10; f=10; e=10; d=10; c=10; b=10; a=10; w1=v1; w2=v2; w3=v3; solved=1;}
+                        if(operation==2 && v3==v1-v2){j=10; i=10; h=10; g=10; f=10; e=10; d=10; c=10; b=10; a=10; w1=v1; w2=v2; w3=v3; solved=1;}
+                        if(operation==3 && v3==v1*v2){j=10; i=10; h=10; g=10; f=10; e=10; d=10; c=10; b=10; a=10; w1=v1; w2=v2; w3=v3; solved=1;}
+                        if(operation==4 && v3==v1/v2){j=10; i=10; h=10; g=10; f=10; e=10; d=10; c=10; b=10; a=10; w1=v1; w2=v2; w3=v3; solved=1;}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if(solved){
+    document.getElementById("word1").innerHTML="<span style=\"font-size:60%\">"+oword1+" : "+w1+"</span>";
+    document.getElementById("word2").innerHTML="<span style=\"font-size:60%\">"+oword2+" : "+w2+"</span>";
+    document.getElementById("word3").innerHTML="<span style=\"font-size:60%\">"+oword3+" : "+w3+"</span>";
+    for(var i=0; i<oword1.length; i++){
+      document.getElementById(oword1[i]).innerHTML=trialset[lettersused[oword1[i].charCodeAt(0)-64]];
+      document.getElementById(oword1[i]).style.backgroundColor="red";
+    }
+    for(var i=0; i<oword2.length; i++){
+      document.getElementById(oword2[i]).innerHTML=trialset[lettersused[oword2[i].charCodeAt(0)-64]];
+      document.getElementById(oword2[i]).style.backgroundColor="red";
+    }
+    for(var i=0; i<oword3.length; i++){
+      document.getElementById(oword3[i]).innerHTML=trialset[lettersused[oword3[i].charCodeAt(0)-64]];
+      document.getElementById(oword3[i]).style.backgroundColor="red";
+    }
+    document.getElementById("5").innerHTML="R";
+  }
+  else{
+    document.getElementById("word1").innerHTML="No";
+    document.getElementById("word2").innerHTML="Solution";
+    document.getElementById("word3").innerHTML="Found. <span style=\"font-family:Georgia\">&#9785;</span>";
+    document.getElementById("5").innerHTML="R";
+  }
+
+}
 
 </script>
