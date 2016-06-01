@@ -11,33 +11,25 @@
 
   <table>
     <tr>
-      <td></td>
-      <td>
-        <div class="word" id="word1" onclick="edit1()">TIE</div>
-      </td>
-      <td></td>
-    </tr>
-
-    <tr>
       <td>
         <button class="operationbutton" id="plus" onclick="operationchange(plus)">+</button><br>
         <button class="operationbutton" id="minues" onclick="operationchange(minus)">&#8722;</button><br>
         <button class="operationbutton" id="multiply" onclick="operationchange(multiply)"><span style="font-size:65%">&#10005;</span></button><br>
-        <button class="operationbutton" id="divide" onclick="operationchange(divide)">&#247;</button></td>
-      <td>
-        <textarea class="word" id="word1" type="text" onblur="if(this.value==''){this.value='TRY';}" onfocus="if(this.value=='TRY'){this.value = ''}"/>TRY</textarea>
-      </td>
-      <td></td>
-    </tr>
-
-    <tr>
-      <td>
+        <button class="operationbutton" id="divide" onclick="operationchange(divide)">&#247;</button><br><br><br>
         <button class="operationbutton" onclick="operationchange(equals)">=</button>&nbsp;&nbsp;&nbsp;<br>
       </td>
       <td>
-        <textarea class="word" id="word1" type="text" onblur="if(this.value==''){this.value='SNORE';}" onfocus="if(this.value=='SNORE'){this.value = ''}"/>SNORE</textarea>
+        <div class="word" id="word1" onclick="edit1()">TIE</div>
+        <div class="word" id="word2" onclick="edit2()">TRY</div>
+        <div class="word" id="word3" onclick="edit3()">SNORE</div>
       </td>
-      <td></td>
+      <td>
+        <button class="operationbutton" id="plus" onclick="operationchange(plus)">+</button><br>
+        <button class="operationbutton" id="minues" onclick="operationchange(minus)">&#8722;</button><br>
+        <button class="operationbutton" id="multiply" onclick="operationchange(multiply)"><span style="font-size:65%">&#10005;</span></button><br>
+        <button class="operationbutton" id="divide" onclick="operationchange(divide)">&#247;</button><br>
+        <button class="operationbutton" onclick="operationchange(equals)">=</button>&nbsp;&nbsp;&nbsp;<br>
+      </td>
     </tr>
 
     <tr><td></td><td><center><br>
@@ -49,9 +41,9 @@
 
   <div id="popup1" class="overlay">
     <div class="popup">
-      <div style="font-family:Georgia; color:white; text-align:center; font-size:170%; border:0px; text-decoration:underline;"><br>Word Arithmetic Solver</div>
+      <div style="font-family:Georgia; color:white; text-align:left; font-size:170%; border:0px; text-decoration:underline;">Word Arithmetic Solver</div>
       <a class="close" href="#">&times;</a>
-      <p style="font-family:Georgia; font-size:120%; color:white; text-align:center;">Type words in the boxes then choose the desired operation.<br><br>Press the &ldquo;=&rdquo; button to solve.</p>
+      <p style="font-family:Georgia; font-size:120%; color:white; text-align:left;">Change the words by tapping them and using the alphabet on the right.<br><br>Choose your operation from the four on the left, then press the equals sign to compute a solution.<br><br>As an example, try pressing &ldquo;=&rdquo; with the initial words TIE, TRY, SNORE.</p>
     </div>
   </div>
 
