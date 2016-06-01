@@ -175,30 +175,39 @@ function compute(){
     for(b=0; b<10; b++){
       valid=0;
       while(!valid){if(b!=a){valid=1;} else{b++;}}
+      if(b<10){
       for(c=0; c<10; c++){
         valid=0;
         while(!valid){if(c!=a && c!=b){valid=1;} else{c++;}}
+        if(c<10){
         for(d=0; d<10; d++){
           valid=0;
           while(!valid){if(d!=a && d!=b && d!=c){valid=1;} else{d++;}}
+          if(d<10){
           for(e=0; e<10; e++){
             valid=0;
             while(!valid){if(e!=a && e!=b && e!=c && e!=d){valid=1;} else{e++;}}
+            if(e<10){
             for(f=0; f<10; f++){
               valid=0;
               while(!valid){if(f!=a && f!=b && f!=c && f!=d && f!=e){valid=1;} else{f++;}}
+              if(f<10){
               for(g=0; g<10; g++){
                 valid=0;
                 while(!valid){if(g!=a && g!=b && g!=c && g!=d && g!=e && g!=f){valid=1;} else{g++;}}
+                if(g<10){
                 for(h=0; h<10; h++){
                   valid=0;
                   while(!valid){if(h!=a && h!=b && h!=c && h!=d && h!=e && h!=f && h!=g){valid=1;} else{h++;}}
+                  if(h<10){
                   for(i=0; i<10; i++){
                     valid=0;
                     while(!valid){if(i!=a && i!=b && i!=c && i!=d && i!=e && i!=f && i!=g && i!=h){valid=1;} else{i++;}}
+                    if(i<10){
                     for(j=0; j<10; j++){
                       valid=0;
                       while(!valid){if(j!=a && j!=b && j!=c && j!=d && j!=e && j!=f && j!=g && j!=h && j!=i){valid=1;} else{j++;}}
+                      if(j<10){
 
                       trialset[1]=a; trialset[2]=b; trialset[3]=c; trialset[4]=d; trialset[5]=e; trialset[6]=f; trialset[7]=g; trialset[8]=h; trialset[9]=i; trialset[10]=j;
                       v1=0; v2=0; v3=0;
@@ -208,15 +217,15 @@ function compute(){
                         if(operation==2 && v3==v1-v2){j=10; i=10; h=10; g=10; f=10; e=10; d=10; c=10; b=10; a=10; w1=v1; w2=v2; w3=v3; solved=1;}
                         if(operation==3 && v3==v1*v2){j=10; i=10; h=10; g=10; f=10; e=10; d=10; c=10; b=10; a=10; w1=v1; w2=v2; w3=v3; solved=1;}
                         if(operation==4 && v3==v1/v2){j=10; i=10; h=10; g=10; f=10; e=10; d=10; c=10; b=10; a=10; w1=v1; w2=v2; w3=v3; solved=1;}
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
+                      }}
+                    }}
+                  }}
+                }}
+              }}
+            }}
+          }}
+        }}
+      }}
     }
   }
   if(solved){
