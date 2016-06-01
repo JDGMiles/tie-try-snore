@@ -1,12 +1,9 @@
-html {display: table; margin: auto;}
-html, body {height: 90%;}
-
 @font-face {font-family: Liberation Serif; src: url(http://jdgmiles.github.io/LiberationSerif.woff);}
 @font-face {font-family: Liberation Serif Bold; src: url(http://jdgmiles.github.io/LiberationSerif-Bold.woff);}
 @font-face {font-family: Liberation Serif Italic; src: url(http://jdgmiles.github.io/LiberationSerif-Italic.woff);}
 @font-face {font-family: Liberation Serif Bold Italic; src: url(http://jdgmiles.github.io/LiberationSerif-BoldItalic.woff);}
 
-body {font-family: Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif; font-size: 150%; background-color: black; color:white; vertical-align:middle; display: table-cell;}
+body {font-family: Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif; font-size: 150%; background-color: black; color:white;}
 
 .liberationregular {font-family:Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif}
 .liberationbold {font-family:Liberation Serif Bold, Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif}
@@ -37,7 +34,7 @@ body {font-family: Liberation Serif, Tahoma, Arial, Helvetica, Sans-Serif; font-
 }
 
 .popup {
-  margin: 10%;
+  margin: 10px;
   padding: 20px;
   background: #181818;
   border:2px solid #AAAAAA;
